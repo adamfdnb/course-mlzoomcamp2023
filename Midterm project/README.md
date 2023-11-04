@@ -7,9 +7,9 @@
 #### This repository contains a midterm project conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project lasted 2 weeks. The idea behind this project is to implement everything we learned in the last 6 weeks of classes.
 
 ## Contents:
-1. Problem & Goal description
-2. information about the dataset
-3. approach to solving the problem
+1. problem & Goal description
+2. about the dataset
+3. problem solving approach
 	3.1 EDA to understand the dataset
 	3.2 Training the model
 	3.3 Implementing the model in the cloud
@@ -43,5 +43,9 @@ We can divide the dataset into 7 independent variables, i.e. pH, temperature, ta
 The dependent variable is the grade of milk, which can be good, average or bad. 
 
 8. Grade: This is the target value and takes the values: low_quality, medium_quality or high_quality.
+
+## 3. Problem solving approach
+### 3.1 EDA to understand the dataset
+I performed the following EDA for this dataset:
 
 
