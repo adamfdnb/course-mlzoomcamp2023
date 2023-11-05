@@ -7,7 +7,7 @@
 #### This repository contains a midterm project conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project lasted 2 weeks. The idea behind this project is to implement everything we learned in the last 6 weeks of classes.
 
 ## Contents:
-1. problem & Goal description
+1. problem & goal description
 2. about the dataset
 3. problem solving approach
 	3.1 EDA to understand the dataset
@@ -47,5 +47,11 @@ The dependent variable is the grade of milk, which can be good, average or bad.
 ## 3. Problem solving approach
 ### 3.1 EDA to understand the dataset
 I performed the following EDA for this dataset:
+
++ Data loading: Loading data into the program for further analysis.
++ Analysis of missing values: Analysis of missing values in the data 
++ Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
++ Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
++ Outlier analysis: Analysis of outliers in the data to identify abnormal values.
 
 
