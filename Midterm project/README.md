@@ -52,6 +52,5 @@ I performed the following EDA for this dataset:
 + Analysis of missing values: Analysis of missing values in the data 
 + Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
 + Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
-+ Outlier analysis: Analysis of outliers in the data to identify abnormal values.
 
 
