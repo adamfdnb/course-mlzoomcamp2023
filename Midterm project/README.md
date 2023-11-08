@@ -53,4 +53,20 @@ I performed the following EDA for this dataset:
 + Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
 + Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
 
+## 5. development system
+To deploy Model with Flask 
+
+1. create virtual environment from pipfile and pipfilelock folders running command below:
+   	+ ``` pipenv install ```
+3. Activate shell  
+	+ ``` pipenv shell ```
+3. The above line of code is meant to install all required dependencies listed in the pipfiles in a virtual environment, these can also be installed directly by running:
+    	+ ``` pip install name_of_package ```
+
+4. Run service app (predict.py) in virtual environment
+	+ ``` python predict.py ``` OR ``` pipenv run python predict.py ``` (if using virtual environment)
+5. Run test file in a sepearate virtual environment terminal (test.py)
+	+ ``` python test.py `````
+
+
 
