@@ -54,19 +54,23 @@ I performed the following EDA for this dataset:
 + Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
 
 ## 5. development system
-To deploy Model with Flask 
+### To deploy Model with Flask 
 
-1. create virtual environment from pipfile and pipfilelock folders running command below:
-   	+ ``` pipenv install ```
-3. Activate shell  
-	+ ``` pipenv shell ```
+1. To activate a virtual environment using Pipenv on a Linux system, follow these steps:
+	- Open a terminal in your Linux system.
+ 	- Navigate to the directory where your project is located or create a new directory for your project if you haven't already.
+  	- Use the + ```pipenv install``` command to create a new virtual environment and install the project's dependencies.
+     + This command will automatically create a Pipfile and Pipfile.lock and set up a virtual environment in your project directory.
+       
+2. To activate the virtual environment, use the ```pipenv shell```
+	- After running this command, you will be inside the activated virtual environment, which means that all Python commands and packages installed within this environment will be available.
+	
 3. The above line of code is meant to install all required dependencies listed in the pipfiles in a virtual environment, these can also be installed directly by running:
     	+ ``` pip install name_of_package ```
-
-4. Run service app (predict.py) in virtual environment
+5. Run service app (predict.py) in virtual environment
 	+ ``` python predict.py ``` OR ``` pipenv run python predict.py ``` (if using virtual environment)
-5. Run test file in a sepearate virtual environment terminal (test.py)
-	+ ``` python test.py `````
+6. Run test file in a sepearate virtual environment terminal (test.py)
+	+ ``` python test.py ```
 
 
 
