@@ -1,16 +1,9 @@
 import pickle
 from flask import Flask, request, jsonify
-from sklearn.feature_extraction import DictVectorizer
 
 def load(filename: str):
     with open(filename, 'rb') as f_in:
         return pickle.load(f_in)
-
-# Initialize a DictVectorizer object (dv)
-dv = DictVectorizer()
-
-# Load a pre-trained DictVectorizer from a file (assuming 'dv.bin' is the file)
-dv = load('dv.pkl')
 
 # Load a pre-trained model from a file (assuming 'model_mqp.pkl' is the file)
 model = load('model_mqp.pkl')
@@ -35,19 +28,19 @@ def predict():
         milk_data = request.json
         print("Received client data:", milk_data)
         
-        X_milk = dv.transform([milk_data])
-        
-        print("Transformed data:", X_milk)
+        # If you don't use DV, you can directly use the input data as-is
+        X_milk = [list(milk_data.values())]
+
         probs = model.predict(X_milk)
-        probability = probs[0]
+        probability = probs
         print("Probability for class 1:", probability)
 
         # Define milk quality labels
         milk_quality_labels = ["Bad", "Moderate", "Good"]
 
         # Determine milk quality prediction based on probability
-        if 0 <= probability < len(milk_quality_labels):
-            milk_quality_prediction = milk_quality_labels[int(probability)]
+        if 0 <= probability[0] < len(milk_quality_labels):
+            milk_quality_prediction = milk_quality_labels[int(probability[0])]
             print(f"The milk quality is '{milk_quality_prediction}'")
             result = {'milk_quality': milk_quality_prediction}
             return jsonify(result)
