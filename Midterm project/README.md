@@ -20,7 +20,7 @@
 5. Summary with conclusions
 
 ### 1. Problem & Goal Description
-Milk quality is an important factor affecting its nutritional value, taste, shelf life and safety. Evaluation of milk quality can be done on the basis of various physical parameters, such as pH, temperature, taste, odour, fat, turbidity and colour. These parameters can be measured using simple laboratory methods or electronic sensors. However, these methods can be time-consuming, expensive or inaccurate. Therefore, in my opinion, there is a need to develop predictive models that can quickly and accurately predict milk quality based on available data.
+Milk quality is an important factor affecting its nutritional value, taste, shelf life and safety. Evaluation of milk quality can be done on the basis of various physical parameters, such as pH, temperature, taste, odour, fat, turbidity and colour. These parameters can be measured using simple laboratory methods or electronic sensors. However, these methods can be time-consuming, expensive. Therefore, in my opinion, there is a need to develop predictive models that can quickly and accurately predict milk quality based on available data.
 
 The goal of this project is to build and compare different machine learning models that can predict milk quality based on physical characteristics. 
 
