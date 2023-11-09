@@ -102,8 +102,13 @@ pwd
 
 ![alt text](images/docker_build_image_2023-11-09.png)
 
-+ Run docker image:
+3. Run docker image:
   - ``` docker run -it --rm -p 9696:9696 mtproject_mqp ```
 
 ![alt text](images/RunDocker_2023-11-09.png)
 
+### Cloud Deploying 
+
+
+
+![alt text](images/test_webapp.png)
