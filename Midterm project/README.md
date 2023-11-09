@@ -13,8 +13,11 @@
 3.1 EDA to understand the dataset<br>
 3.2 Training the model<br>
 3.3 Implementing the model in the cloud<br>
-4. development system
-6. how to reproduce this project
+4. development system<br>
+   4.1 Deploy Model with Flask<br>
+   4.2 Deploying Model Locally with Docker<br>
+   4.3 Cloud Deploying <br>
+5. Summary with conclusions
 
 ### 1. Problem & Goal Description
 Milk quality is an important factor affecting its nutritional value, taste, shelf life and safety. Evaluation of milk quality can be done on the basis of various physical parameters, such as pH, temperature, taste, odour, fat, turbidity and colour. These parameters can be measured using simple laboratory methods or electronic sensors. However, these methods can be time-consuming, expensive or inaccurate. Therefore, in my opinion, there is a need to develop predictive models that can quickly and accurately predict milk quality based on available data.
@@ -72,6 +75,11 @@ The balance in accuracy across training, validation and test data sets is impres
 + Based on the results, it appears that the K-Nearest Neighbors (KNN) model achieves very high accuracy on both the test and validation sets. <br>
 In the case of KNN, too low values of the n_neighbors parameter can lead to over-fitting. For values of n_neighbors=1, the model may try to "remember" the training data instead of generalizing the patterns, which can lead to problems on new data.
 
+Finally, preparing the data, training the RandomForestClassifier model and saving it to the ``` model_mqp.pkl ``` file was prepared in the ``` train.py ``` file. 
+Having the model prepared, you can easily import it in the future to make predictions on new data.
+
+![alt text](images/train_py.png)
+
 ## 5. Development system
 ### To deploy Model with Flask 
 
@@ -85,21 +93,18 @@ In the case of KNN, too low values of the n_neighbors parameter can lead to over
    	+ ```pipenv shell```
 	+ After running this command, you will be inside the activated virtual environment, which means that all Python commands and packages installed within this environment will be available.
 
-4. This line of code is to install all the necessary dependencies listed in the Pipfile files of the virtual environment.
+3. This line of code is to install all the necessary dependencies listed in the Pipfile files of the virtual environment.
    	+ ``` pip install name_of_package ```
    
-6. Run service app (predict.py)
+4. Run service app (predict.py)
    	+ ``` python predict.py ```
  	+ ``` pipenv run python predict.py ``` / if using virtual environment
 
-![alt text](images/wtest_py.png)
-
-
-7. Run test file in a sepearate virtual environment terminal (test.py)
+5. Run test file in a sepearate virtual environment terminal (test.py)
 	+ ``` python test.py ```
  	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
 
-
+![alt text](images/test_py.png)
     
 
 ### Deploying Model Locally with Docker
@@ -143,4 +148,29 @@ pwd
 ![alt text](images/webservice_3.png)
 
 
+5. Run test file test milk quality prediction app in cloud
+	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
+
 ![alt text](images/test_webapp.png)
+
+
+## 6. Summary with conclusions
+
+### Data Preparation:
+Correct data preparation is crucial to the effectiveness of the model. Converting column names to lowercase, converting spaces to underscores, and transforming values in the grade column allowed for better data representation.
+
+### Analysis and Comparison of Models:
+Tested four different models:Logistics Regresion, Decision Tree Classifier, Random Forest Classifier and K-Nearest Neighbors Classifier.I used various hyperparameters to optimize each model.
+
+### Evaluation of Models:
+I evaluated the models using various metrics such as accuracy (accuracy), RMSE (Root Mean Squared Error) and confusion matrix (confusion matrix).
+I tested the models on different subsets of data (training, validation, testing) allows to evaluate their overall performance.
+
+### Model Selection:
+Based on the test results, I decided to use the RandomForestClassifier model with hyperparameters n_estimators=5 and max_depth=5.
+
+### Model:
+The final RandomForestClassifier model was saved to the model_mqp.pkl file, making it easy to reuse the model for forecasting on new data.
+
+### Model Performance:
+The final model achieved high accuracy on the test set, suggesting that the model is effective in predicting milk grade classes based on available characteristics.
