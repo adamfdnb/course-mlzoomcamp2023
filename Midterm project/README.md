@@ -141,6 +141,8 @@ pwd
 
 ### Cloud Deploying 
 
+To deploy the application in the cloud, I used Render, which is a unified cloud for creating and running all applications and websites
+
 ![alt text](images/webservice.png)
 
 ![alt text](images/webservice_2.png)
