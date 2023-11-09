@@ -105,5 +105,5 @@ pwd
 + Run docker image:
   - ``` docker run -it --rm -p 9696:9696 mtproject_mqp ```
 
-![alt text](images/RunDocker 2023-11-09.png)
+![alt text](images/RunDocker_2023-11-09.png)
 
