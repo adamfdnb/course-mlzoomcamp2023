@@ -1,6 +1,6 @@
 import requests
 
-web = "https://milk-quality-prediction-uqjr.onrender.com"
+web = "milk-quality-prediction-uqjr.onrender.com"
 
 url = f'http://{web}/predict'
 
