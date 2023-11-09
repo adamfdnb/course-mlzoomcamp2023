@@ -109,6 +109,11 @@ pwd
 
 ### Cloud Deploying 
 
+![alt text](images/webservice.png)
+
+![alt text](images/webservice_2.png)
+
+![alt text](images/webservice_3.png)
 
 
 ![alt text](images/test_webapp.png)
