@@ -53,7 +53,7 @@ I performed the following EDA for this dataset:
 + Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
 + Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
 
-## 5. development system
+## 5. Development system
 ### To deploy Model with Flask 
 
 1. To activate a virtual environment using Pipenv on a Linux system, follow these steps:
@@ -64,7 +64,10 @@ I performed the following EDA for this dataset:
        
 2. To activate the virtual environment, use the ```pipenv shell```
 	- After running this command, you will be inside the activated virtual environment, which means that all Python commands and packages installed within this environment will be available.
-	
+
+
+
+ 
 3. The above line of code is meant to install all required dependencies listed in the pipfiles in a virtual environment, these can also be installed directly by running:
     	+ ``` pip install name_of_package ```
 5. Run service app (predict.py) in virtual environment
@@ -72,5 +75,35 @@ I performed the following EDA for this dataset:
 6. Run test file in a sepearate virtual environment terminal (test.py)
 	+ ``` python test.py ```
 
+### Deploying Model Locally with Docker
+#### Install and run docker on local machine
+	+ About Docker [Docker overview](https://docs.docker.com/get-started/overview/)
+1. Installing Docker
+Docker is a tool that makes it easy to create, deploy and run applications in containers. Containers are isolated units that contain everything you need to run an application,including code, the execution environment, libraries and other dependencies. Overall, Docker speeds up development processes, makes it easier to deploy and manage applications, and improves the consistency of the environment between different stages of the application lifecycle.
 
+	- Ubuntu 
+
+```bash
+sudo apt-get install docker.io
+```
+Install and run docker, follow [more information about installation](https://docs.docker.com/engine/install/ubuntu//) <br>
+or using the resources of [DataTalskClub](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/05-deployment/06-docker.md)
+ 
+2. Build docker image in terminal
+
+  +  ``` docker build -t mtproject_mqp . ```
+
+Remember that you must be in the project folder :
+You can check what folder you are currently in in the Linux terminal using the pwd command. pwd stands for "print working directory" and will display the full path to the current directory.
+
+```bash
+pwd
+```
+
+![alt text](/docker_build_image_2023-11-09.png)
+
++ Run docker image:
+  - ``` docker run -it --rm -p 9696:9696 mtproject_mqp ```
+
+![alt text](/RunDocker.png)
 
