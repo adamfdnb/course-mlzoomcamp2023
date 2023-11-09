@@ -1,4 +1,5 @@
 # Milk Quality Prediction
+### "Fast, Accurate, and Cost-Effective: Predictive Models in Milk Quality Assessment for Dairy Production Efficiency."
 
 ![Imgur](https://rnz-ressh.cloudinary.com/image/upload/s--9xz0DRPL--/c_scale,f_auto,q_auto,w_1050/v1644382333/4MH034R_copyright_image_252919)
 
