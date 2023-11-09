@@ -100,10 +100,10 @@ You can check what folder you are currently in in the Linux terminal using the p
 pwd
 ```
 
-![alt text](/docker_build_image_2023-11-09.png)
+![alt text](images/docker_build_image_2023-11-09.png)
 
 + Run docker image:
   - ``` docker run -it --rm -p 9696:9696 mtproject_mqp ```
 
-![alt text](/RunDocker.png)
+![alt text](images/RunDocker.png)
 
