@@ -9,16 +9,12 @@
 ## Contents:
 1. problem & goal description
 2. about the dataset
-3. problem solving approach
-	3.1 EDA to understand the dataset
-	3.2 Training the model
-	3.3 Implementing the model in the cloud
-4. information about files and folders in this repository
-5. development system
+3. problem solving approach<br>
+3.1 EDA to understand the dataset<br>
+3.2 Training the model<br>
+3.3 Implementing the model in the cloud<br>
+4. development system
 6. how to reproduce this project
-7. conclusions
-8. references
-
 
 ### 1. Problem & Goal Description
 Milk quality is an important factor affecting its nutritional value, taste, shelf life and safety. Evaluation of milk quality can be done on the basis of various physical parameters, such as pH, temperature, taste, odour, fat, turbidity and colour. These parameters can be measured using simple laboratory methods or electronic sensors. However, these methods can be time-consuming, expensive or inaccurate. Therefore, in my opinion, there is a need to develop predictive models that can quickly and accurately predict milk quality based on available data.
@@ -53,6 +49,29 @@ I performed the following EDA for this dataset:
 + Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
 + Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
 
+## 3.2. Training the model
+
+I tested four models and tuned hyperparameters to optimize their performance. A short summary: 
+
+### Logistic Regression
+
++ The model seems to be performing reasonably well with an accuracy of around 0.75 on both the training and test datasets. The predictions for the first five examples look quite close to the actual expectations, with some minor discrepancies.
+
+### DecisionTreeClassifier
+
++ I performed fine-tuning of the hyperparameters, testing different values of max_depth. Visualizing the RMSE values for different max_depth values is a nice touch - it provides a clear picture of the model's performance at different depths. <br>
+The excellent accuracy of 1.0 in the test dataset raises concerns that over-fitting may be occurring. 
+
+### Random Forest Classifier
+
++ Very interesting work with the Random Forest classifier! Extensive exploration of various values of max_depth and n_estimators, combined with visualizations, shows good recognition in tuning the model.
+The balance in accuracy across training, validation and test data sets is impressive, indicating a well generalized model. The confusion matrix provides a deeper understanding of model performance in each class.
+
+### KNeighbors Classifier
+
++ Based on the results, it appears that the K-Nearest Neighbors (KNN) model achieves very high accuracy on both the test and validation sets. <br>
+In the case of KNN, too low values of the n_neighbors parameter can lead to over-fitting. For values of n_neighbors=1, the model may try to "remember" the training data instead of generalizing the patterns, which can lead to problems on new data.
+
 ## 5. Development system
 ### To deploy Model with Flask 
 
@@ -62,22 +81,30 @@ I performed the following EDA for this dataset:
   	- Use the + ```pipenv install``` command to create a new virtual environment and install the project's dependencies.
      + This command will automatically create a Pipfile and Pipfile.lock and set up a virtual environment in your project directory.
        
-2. To activate the virtual environment, use the ```pipenv shell```
-	- After running this command, you will be inside the activated virtual environment, which means that all Python commands and packages installed within this environment will be available.
+2. To activate the virtual environment, use the
+   	+ ```pipenv shell```
+	+ After running this command, you will be inside the activated virtual environment, which means that all Python commands and packages installed within this environment will be available.
+
+4. This line of code is to install all the necessary dependencies listed in the Pipfile files of the virtual environment.
+   	+ ``` pip install name_of_package ```
+   
+6. Run service app (predict.py)
+   	+ ``` python predict.py ```
+ 	+ ``` pipenv run python predict.py ``` / if using virtual environment
+
+![alt text](images/wtest_py.png)
 
 
-
- 
-3. The above line of code is meant to install all required dependencies listed in the pipfiles in a virtual environment, these can also be installed directly by running:
-    	+ ``` pip install name_of_package ```
-5. Run service app (predict.py) in virtual environment
-	+ ``` python predict.py ``` OR ``` pipenv run python predict.py ``` (if using virtual environment)
-6. Run test file in a sepearate virtual environment terminal (test.py)
+7. Run test file in a sepearate virtual environment terminal (test.py)
 	+ ``` python test.py ```
+ 	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
+
+
+    
 
 ### Deploying Model Locally with Docker
 #### Install and run docker on local machine
-	+ About Docker [Docker overview](https://docs.docker.com/get-started/overview/)
+About Docker [Docker overview](https://docs.docker.com/get-started/overview/)
 1. Installing Docker
 Docker is a tool that makes it easy to create, deploy and run applications in containers. Containers are isolated units that contain everything you need to run an application,including code, the execution environment, libraries and other dependencies. Overall, Docker speeds up development processes, makes it easier to deploy and manage applications, and improves the consistency of the environment between different stages of the application lifecycle.
 
