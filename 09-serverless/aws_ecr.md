@@ -1,5 +1,5 @@
 ```
-ACCOUNT=890875518171
+ACCOUNT=875518171890
 REGION=eu-central-1
 REGISTRY=bees-wasps-images
 PREFIX=${ACCOUNT}.dkr.ecr.${REGION}.amazonaws.com/${REGISTRY}
