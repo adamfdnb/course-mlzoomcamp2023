@@ -63,11 +63,11 @@ I performed the following EDA for this dataset:
   + Used box plots to determine outliers
   + In the end, I created two datasets on which to conduct research. The second data set was cleaned of outliers
 + Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
-+ Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
++ Correlation and covariance analysis to identify relationships between data features
 
 ## 3.2. Training the model
 
-I tested four models and tuned hyperparameters to optimize their performance. A short summary: 
+I tested seve models and tuned hyperparameters to optimize their performance. A short summary: 
 
 ### Logistic Regression
 
