@@ -69,26 +69,25 @@ I performed the following EDA for this dataset:
 
 I tested seve models and tuned hyperparameters to optimize their performance. A short summary: 
 
-### Logistic Regression
+### Logistic Regression | Random Forest Classifier| Gaussian Naive Bayes
 
-+ The model seems to be performing reasonably well with an accuracy of around 0.75 on both the training and test datasets. The predictions for the first five examples look quite close to the actual expectations, with some minor discrepancies.
++ The Random Forest model tends to overfit the training data, as evidenced by its perfect accuracy on the training datasets but lower accuracy on the testing datasets. Logistic Regression and Naive Bayes exhibit more stable performance but struggle to predict the positive class, especially on the original data. The models trained on the cleaned dataset do not consistently outperform their counterparts trained on the original data. Naive Bayes, the accuracy on the training dataset is 63.16%, indicating moderate performance. The performance on the testing dataset is consistent with the training dataset, with an accuracy of 62.96%.
 
-### DecisionTreeClassifier
+### Support Vector Machine (SVM) 
 
-+ I performed fine-tuning of the hyperparameters, testing different values of max_depth. Visualizing the RMSE values for different max_depth values is a nice touch - it provides a clear picture of the model's performance at different depths. <br>
-The excellent accuracy of 1.0 in the test dataset raises concerns that over-fitting may be occurring. 
-
-### Random Forest Classifier
-
-+ Very interesting work with the Random Forest classifier! Extensive exploration of various values of max_depth and n_estimators, combined with visualizations, shows good recognition in tuning the model.
-The balance in accuracy across training, validation and test data sets is impressive, indicating a well generalized model. The confusion matrix provides a deeper understanding of model performance in each class.
++ It seems like the SVM model with different values of the regularization parameter C (0.001, 0.01, 0.1, 1, 10, 100) is not performing well on both the training and testing sets. The accuracy is around 60-63%, and the confusion matrix and classification report show that the model is not effectively distinguishing between the two classes (0 and 1). The precision, recall, and F1-score for class 1 are consistently low, indicating that the model struggles to correctly identify instances of class 1.
 
 ### KNeighbors Classifier
 
-+ Based on the results, it appears that the K-Nearest Neighbors (KNN) model achieves very high accuracy on both the test and validation sets. <br>
-In the case of KNN, too low values of the n_neighbors parameter can lead to over-fitting. For values of n_neighbors=1, the model may try to "remember" the training data instead of generalizing the patterns, which can lead to problems on new data.
++ Overfitting: The models, especially with fewer neighbors, seem to overfit the training data, resulting in a significant drop in performance on the testing set. Class Imbalance: The models struggle to perform well on the positive class, possibly due to class imbalance.
 
-Finally, preparing the data, training the RandomForestClassifier model and saving it to the ``` model_mqp.pkl ``` file was prepared in the ``` train.py ``` file. 
+### XGBClassifier with GridSearchCV
+
++ The cross-validation results indicate that the XGBClassifier model is able to achieve a reasonable level of accuracy in predicting the potability of drinking water, with average test set accuracies ranging from 68.54% to 72.65%. The best performing hyperparameters vary depending on the dataset (original or cleaned), but generally involve a learning rate (eta) of 0.1, a maximum depth between 3 and 6, a minimum child weight between 1 and 7, a number of estimators between 25 and 100, and a subsample of 0.7.
++ The models trained on the cleaned dataset generally achieved slightly higher accuracy compared to the models trained on the original dataset. This suggests that the cleaning process may have removed some noise or irrelevant features that were negatively impacting the model's performance.
++ The XGBClassifier model shows promising results for predicting the potability of drinking water. Further optimization of hyperparameters and exploration of different data preprocessing techniques could potentially improve the model's performance.
+
+  + Finally, preparing the data, training the XGBClassifier model and saving it to the ``` model_wpp.pkl ``` file was prepared in the ``` train.py ``` file. 
 Having the model prepared, you can easily import it in the future to make predictions on new data.
 
 ![alt text](images/train_py.png)
