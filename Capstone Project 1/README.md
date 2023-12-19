@@ -135,7 +135,7 @@ or using the resources of [DataTalskClub](https://github.com/DataTalksClub/machi
  
 2. Build docker image in terminal
 
-  +  ``` docker build -t mtproject_mqp . ```
+  +  ``` docker build -t water-predict_cp1 . ```
 
 Remember that you must be in the project folder :
 You can check what folder you are currently in in the Linux terminal using the pwd command. pwd stands for "print working directory" and will display the full path to the current directory.
@@ -147,7 +147,7 @@ pwd
 ![alt text](images/docker_build_image_2023-11-09.png)
 
 3. Run docker image:
-  - ``` docker run -it --rm -p 9696:9696 mtproject_mqp ```
+  - ``` docker run -it --rm -p 9696:9696 water-predict_cp1 ```
 
 ![alt text](images/RunDocker_2023-11-09.png)
 
