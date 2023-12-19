@@ -57,7 +57,11 @@ The dependent variable is the quality of the water, which may be undrinkable or 
 I performed the following EDA for this dataset:
 
 + Data loading: Loading data into the program for further analysis.
-+ Analysis of missing values: Analysis of missing values in the data 
+  + In order to fill in the missing data, I have grouped the data with ph and the corresponding ranges according to the accepted standards 
++ Analysis of missing values: Analysis of missing values in the data
+  + After completing the data, checked the covariance and correlation,
+  + Used box plots to determine outliers
+  + In the end, I created two datasets on which to conduct research. The second data set was cleaned of outliers
 + Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
 + Correlation analysis: Analyzing correlations between variables in the data to identify relationships between them.
 
