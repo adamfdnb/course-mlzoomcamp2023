@@ -32,6 +32,7 @@ The goal of this project is to build Tto develop and evaluate machine learning m
 ## 2. About the Dataset
 
 You can get the dataset from [kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
+I have prepared a code in notebook that imports a set of data from within notenook. You will need an individual API Token downloaded from Kaggle. [Details](https://github.com/Kaggle/kaggle-api)
 
 The Water Potability dataset contains information about water quality, including its suitability for human consumption. It contains 3266 observations, each of which represents a water sample. Each observation contains 9 features:
 
