@@ -1,10 +1,14 @@
 # Predicting the drinkability of water
-"Your health starts with clean water!"
-![Imgur](https://torrentlab.com/wp-content/uploads/2017/03/istock-923038904-768x511.jpg)
+## "Your health starts with clean water!"
+
+<p align="center">
+  <img src="https://torrentlab.com/wp-content/uploads/2017/03/istock-923038904-768x511.jpg">
+</p>
+
 
 *photo is from [https://torrentlab.com](https://torrentlab.com)/*
 
-#### This repository contains a midterm project conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project lasted 2 weeks. The idea behind this project is to implement everything we learned in the last 6 weeks of classes.
+#### This repository contains a Capstone project 1 conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project lasted 2 weeks. The idea behind this project is to implement everything we learned in the last 10 weeks of classes.
 
 ## Contents:
 1. problem & goal description
@@ -20,13 +24,14 @@
 5. Summary with conclusions
 
 ### 1. Problem & Goal Description
-Milk quality is an important factor affecting its nutritional value, taste, shelf life and safety. Evaluation of milk quality can be done on the basis of various physical parameters, such as pH, temperature, taste, odour, fat, turbidity and colour. These parameters can be measured using simple laboratory methods or electronic sensors. However, these methods can be time-consuming, expensive. Therefore, in my opinion, there is a need to develop predictive models that can quickly and accurately predict milk quality based on available data.
 
+Ensuring access to safe drinking water is not only a health issue, but also a fundamental right for everyone. It is a key component of effective health policy, with important developmental implications at various levels - from national to regional to local levels.
+Analyses indicate that investments in water and sanitation infrastructure bring net economic benefits, as the reduction in negative health effects and health care costs exceeds the cost of implementing appropriate solutions. As a result, access to safe water becomes an important factor not only for individual well-being, but also for sustainable social development
 The goal of this project is to build and compare different machine learning models that can predict milk quality based on physical characteristics. 
 
 ## 2. About the Dataset
 
-You can get the dataset from [kaggle](https://www.kaggle.com/datasets/cpluzshrijayan/milkquality/data). 
+You can get the dataset from [kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
 
 The data I am using in this project was collected manually from observations. The dataset contains more than 1000 observations.
 We can divide the dataset into 7 independent variables, i.e. pH, temperature, taste, odor, fat, turbidity and color an one dependend variable: Grade
