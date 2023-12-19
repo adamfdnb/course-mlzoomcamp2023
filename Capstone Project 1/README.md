@@ -33,20 +33,21 @@ The goal of this project is to build and compare different machine learning mode
 
 You can get the dataset from [kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
 
-The data I am using in this project was collected manually from observations. The dataset contains more than 1000 observations.
-We can divide the dataset into 7 independent variables, i.e. pH, temperature, taste, odor, fat, turbidity and color an one dependend variable: Grade
+The Water Potability dataset contains information about water quality, including its suitability for human consumption. It contains 3266 observations, each of which represents a water sample. Each observation contains 9 features:
 
-1. pH: This characteristic determines the pH of the milk, which ranges from 3 to 9.5.
-2. Temperature: This characteristic determines the temperature of the milk, and it ranges from 34'C to 90'C.
-3. Taste: This characteristic determines the taste of the milk and takes possible values: 1 (good) or 0 (bad).
-4. Odor: This characteristic determines the smell of milk and takes possible values: 1 (good) or 0 (bad).
-5. Fat: This characteristic determines the fat content of the milk and takes possible values: 1 (good) or 0 (bad).
-6. Turbidity: This characteristic determines the turbidity of the milk and takes possible values: 1 (good) or 0 (bad).
-7. Color: *This characteristic determines the color of the milk, which ranges from 240 to 255.
+1. pH
+2. Total Hardness
+3. Chlorides
+4. Electrical Conductivity
+5. Nitrates
+6. Phosphates
+7. Total Organic Carbon
+8. Ammoniacal Nitrogen
+9. Sulfates
 
-The dependent variable is the grade of milk, which can be good, average or bad. 
+The dependent variable is the quality of the water, which may be undrinkable or drinkable 
 
-8. Grade: This is the target value and takes the values: low_quality, medium_quality or high_quality.
+10. Potability: Indicates if water is safe for human consumption where 1 means Potable and 0 means Not potable.
 
 ## 3. Problem solving approach
 ### 3.1 EDA to understand the dataset
