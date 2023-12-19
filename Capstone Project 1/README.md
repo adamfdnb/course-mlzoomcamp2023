@@ -27,7 +27,7 @@
 
 Ensuring access to safe drinking water is not only a health issue, but also a fundamental right for everyone. It is a key component of effective health policy, with important developmental implications at various levels - from national to regional to local levels.
 Analyses indicate that investments in water and sanitation infrastructure bring net economic benefits, as the reduction in negative health effects and health care costs exceeds the cost of implementing appropriate solutions. As a result, access to safe water becomes an important factor not only for individual well-being, but also for sustainable social development
-The goal of this project is to build and compare different machine learning models that can predict milk quality based on physical characteristics. 
+The goal of this project is to build Tto develop and evaluate machine learning models capable of predicting the potability of drinking water based on its physical characteristics. This project aims to contribute to improved water quality assessment and identification of potential water quality issues. I spent many hours exploring data and tuning models
 
 ## 2. About the Dataset
 
@@ -49,8 +49,10 @@ The dependent variable is the quality of the water, which may be undrinkable or 
 
 10. Potability: Indicates if water is safe for human consumption where 1 means Potable and 0 means Not potable.
 
+
 ## 3. Problem solving approach
 ### 3.1 EDA to understand the dataset
+
 I performed the following EDA for this dataset:
 
 + Data loading: Loading data into the program for further analysis.
