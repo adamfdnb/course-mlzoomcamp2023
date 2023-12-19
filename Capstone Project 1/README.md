@@ -1,9 +1,8 @@
-# Milk Quality Prediction
-### "Fast, Accurate, and Cost-Effective: Predictive Models in Milk Quality Assessment for Dairy Production Efficiency."
+# Predicting the drinkability of water
+"Your health starts with clean water!"
+![Imgur](https://torrentlab.com/wp-content/uploads/2017/03/istock-923038904-768x511.jpg)
 
-![Imgur](https://rnz-ressh.cloudinary.com/image/upload/s--9xz0DRPL--/c_scale,f_auto,q_auto,w_1050/v1644382333/4MH034R_copyright_image_252919)
-
-*photo is from https://www.rnz.co.nz/*
+*photo is from [https://torrentlab.com](https://torrentlab.com)/*
 
 #### This repository contains a midterm project conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project lasted 2 weeks. The idea behind this project is to implement everything we learned in the last 6 weeks of classes.
 
