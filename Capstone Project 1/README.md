@@ -183,10 +183,22 @@ Converting column names to lowercase, converting spaces to underscores and conve
 I tested four different models: Logistics Regresion, Support Vector Machine, Random Forest Classifier, Gaussian Naive Bayesr, K-Nearest Neighbors Classifier and XGBClassifier with GridSearchCV. I used different hyperparameters to optimize each model.
 
 ### Model evaluation:
-I evaluated the models using various metrics such as accuracy (accuracy),  and confusion matrix (confusion matrix). I tested the models on different subsets of data (training, validation, testing) to evaluate their overall performance.
+I evaluated the models using various metrics such as Accuracy Score, Classification Report, Confusion Matrix, ROC AUC Score, Precision, Recall, ROC Curve, Mean Squared Error, R-squared, F1 Score and AUC.
+I tested the models on different subsets of data (training, validation, testing) to evaluate their overall performance and two datasets
 
 ### Model selection:
-Based on the test results, I decided to use the RandomForestClassifier model with hyperparameters n_estimators=5 and max_depth=5.
+Based on the test results, I decided to use the XGBClassifier model with following hyperparameters 
+```
+{
+    `learning_rate': 0.1,
+    'max_depth': 5,
+    'min_child_weight': 5,
+    'n_estimators': 25,
+    'subsample': 0.7,
+    'objective': 'binary:logistic',
+    'use_label_encoder': False
+}
+```
 
 ### Model:
 The final XGBClassifier model was saved in the model_mqp.model, which makes it easy to reuse the model for forecasting on new data.
