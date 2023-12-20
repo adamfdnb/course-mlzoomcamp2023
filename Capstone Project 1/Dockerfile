@@ -9,7 +9,9 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 
 RUN pipenv install --deploy --system
 
-COPY ["predict.py", "model_wpp.pkl", "./"]
+RUN pipenv run pip install --upgrade xgboost
+
+COPY ["predict.py", "model_wpp.model", "./"]
 
 EXPOSE 9696
 
