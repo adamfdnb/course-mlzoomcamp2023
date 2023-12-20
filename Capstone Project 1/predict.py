@@ -28,7 +28,7 @@ def load_xgb_model(filename: str):
 
 print("Bieżący katalog:", os.getcwd())
 
-# Load a pre-trained model from a file (assuming 'model_mpp.pkl' is the file)
+# Load a pre-trained model from a file
 xgb_model = load_xgb_model(model_filename)
 
 app = Flask('water_quality_probability')
@@ -49,25 +49,33 @@ feature_names = [
 # Assuming you have a trained XGBoost model (xgb_model) and water quality labels
 water_potability_labels = ["undrinkable", "drinkable"]
 
-def predict_water_potability(model, input_data, class_labels=None):
-    # Convert input_data to DataFrame if it's not already
-    if not isinstance(input_data, pd.DataFrame):
-        if isinstance(input_data, list):
-            input_data = [input_data]
-        input_df = pd.DataFrame(input_data, columns=feature_names, index=[0])
+def predict_water_potability(model, input_data, true_labels=None, class_labels=None):
+    # Check if input_data is a list, dict, DataFrame, or numpy array
+    if isinstance(input_data, list):
+        # Assuming each element in the list corresponds to a feature in the order defined by feature_names
+        input_data_dict = dict(zip(feature_names, input_data))
+        input_array = pd.DataFrame([input_data_dict], columns=feature_names).values
+    elif isinstance(input_data, dict):
+        # Convert the dictionary to a DataFrame and then to a 2D NumPy array
+        input_array = pd.DataFrame([input_data], columns=feature_names).values
+    elif isinstance(input_data, pd.DataFrame):
+        # Convert the DataFrame to a 2D NumPy array
+        input_array = input_data.values
+    elif isinstance(input_data, np.ndarray):
+        # Check if the array is 1D, and if so, reshape it to 2D
+        input_array = input_data.reshape(1, -1) if len(input_data.shape) == 1 else input_data
     else:
-        input_df = input_data
-
-    # Create DMatrix for XGBoost
-    dmatrix = xgb.DMatrix(input_df)
+        # If format not supported, raise an error
+        raise ValueError("Unsupported input data format. Supported formats: list, dict, DataFrame, numpy array.")
 
     # Make prediction
-    prediction = model.predict(dmatrix, output_margin=True)
+    prediction = model.predict(xgb.DMatrix(input_array), output_margin=True)
     probability = 1.0 / (1.0 + np.exp(-prediction))
     print(f"Probability for class 1: {probability[0] * 100:.2f}%")
 
     # Map prediction to class label
-    predicted_label = water_potability_labels[int(prediction[0])]
+    predicted_label = water_potability_labels[1] if prediction[0] > 0.5 else water_potability_labels[0]
+
 
     return predicted_label, probability[0]
 
