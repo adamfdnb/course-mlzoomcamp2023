@@ -157,7 +157,7 @@ pwd
 
 ### Cloud Deploying 
 
-To deploy the application in the cloud, I used Render, which is a unified cloud for creating and running all applications and websites
+To deploy the application in the cloud, I used [Render](https://docs.render.com/docs/docker), which is a unified cloud for creating and running all applications and websites
 
 ![alt text](images/webapp_c.png)
 
@@ -166,7 +166,7 @@ To deploy the application in the cloud, I used Render, which is a unified cloud 
 ![alt text](images/webservice_c.png)
 
 
-5. Run test file test milk quality prediction app in cloud
+5. Run test file test water quality prediction app in cloud
 	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
  	+ in order to improve the transfer of data for prediction, it is possible to transfer data in various formats: list, dict, DataFrame or numpy array
 
