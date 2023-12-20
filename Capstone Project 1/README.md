@@ -189,7 +189,7 @@ I tested the models on different subsets of data (training, validation, testing)
 Based on the test results, I decided to use the XGBClassifier model with following hyperparameters 
 ```
 {
-    `learning_rate': 0.1,
+    `eta': 0.1,
     'max_depth': 5,
     'min_child_weight': 5,
     'n_estimators': 25,
