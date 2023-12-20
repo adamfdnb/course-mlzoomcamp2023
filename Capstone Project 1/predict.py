@@ -74,7 +74,7 @@ def predict_water_potability(model, input_data, true_labels=None, class_labels=N
     print(f"Probability for class 1: {probability[0] * 100:.2f}%")
 
     # Map prediction to class label
-predicted_label = water_potability_labels[int(prediction[0] > 0.5)]
+    predicted_label = water_potability_labels[int(prediction[0] > 0.5)]
 
     return predicted_label, probability[0]
 
