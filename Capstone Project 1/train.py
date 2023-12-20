@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import os
+import xgboost as xgb
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from xgboost import XGBClassifier
@@ -110,15 +111,26 @@ def train(df):
     val_accuracy = accuracy_score(y_val, y_pred)
     print(f"Accuracy on the validation dataset: {val_accuracy:.5f}")
     
-    # Save the trained model to a file
-    output_file = "model_mpp.pkl"
-    with open(output_file, "wb") as f_out:
-        pickle.dump(xgb_model, f_out)
 
-    # Get the full path to the saved model
-    output_filepath = os.path.abspath(output_file)
-    print(f"Saved the model as: {output_file}")
-    print(f"Full path to the saved model: {output_filepath}")
+    # Download Booster
+    booster = xgb_model.get_booster()
+
+    # Save mode
+    booster.save_model('model_wpp.model')
+    # Get the current working directory
+    current_directory = os.getcwd()
+
+    # Define the model filename
+    model_filename = 'model_wpp.model'
+
+    # Get the full path to the saved file
+    output_filepath = os.path.abspath(model_filename)
+
+    # Display the saved model's name and its full path
+    model_path = os.path.join(current_directory, model_filename)
+    print(f"Model saved as: {model_filename}")
+    print(f"Full path to the model: {model_path}")
+    print("\n")
 
 if __name__ == "__main__":
     # Load and preprocess the data
