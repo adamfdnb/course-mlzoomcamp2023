@@ -87,7 +87,7 @@ I tested seve models and tuned hyperparameters to optimize their performance. A 
 + The models trained on the cleaned dataset generally achieved slightly higher accuracy compared to the models trained on the original dataset. This suggests that the cleaning process may have removed some noise or irrelevant features that were negatively impacting the model's performance.
 + The XGBClassifier model shows promising results for predicting the potability of drinking water. Further optimization of hyperparameters and exploration of different data preprocessing techniques could potentially improve the model's performance.
 
-  + Finally, preparing the data, training the XGBClassifier model and saving it to the ``` model_wpp.pkl ``` file was prepared in the ``` train.py ``` file. 
+  + Finally, preparing the data, training the XGBClassifier model and saving it to the ``` model_wpp.model ``` file was prepared in the ``` train.py ``` file. 
 Having the model prepared, you can easily import it in the future to make predictions on new data.
 
 ![alt text](images/train_py.png)
@@ -148,12 +148,12 @@ You can check what folder you are currently in in the Linux terminal using the p
 pwd
 ```
 
-![alt text](images/docker_build_image_2023-11-09.png)
+![alt text](images/docker_b_c.png)
 
 3. Run docker image:
   - ``` docker run -it --rm -p 9696:9696 water-predict_cp1 ```
 
-![alt text](images/RunDocker_2023-11-09.png)
+![alt text](images/docker_test2.png)
 
 ### Cloud Deploying 
 
@@ -161,7 +161,7 @@ To deploy the application in the cloud, I used [Render](https://docs.render.com/
 
 ![alt text](images/webapp_c.png)
 
-![alt text](images/webapp1_c.png)
+![alt text](images/webapp_3.png)
 
 ![alt text](images/webservice_c.png)
 
