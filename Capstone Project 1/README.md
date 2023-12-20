@@ -175,21 +175,22 @@ To deploy the application in the cloud, I used [Render](https://docs.render.com/
 
 ## 6. Summary with conclusions
 
-### Data Preparation:
-Correct data preparation is crucial to the effectiveness of the model. Converting column names to lowercase, converting spaces to underscores, and transforming values in the grade column allowed for better data representation.
+### Data preparation:
+Proper data preparation is crucial to the effectiveness of the model.
+Converting column names to lowercase, converting spaces to underscores and converting values in the evaluation column allowed for better data representation.
 
-### Analysis and Comparison of Models:
-Tested four different models:Logistics Regresion, Decision Tree Classifier, Random Forest Classifier and K-Nearest Neighbors Classifier.I used various hyperparameters to optimize each model.
+### Analysis and comparison of models:
+I tested four different models: Logistics Regresion, Support Vector Machine, Random Forest Classifier, Gaussian Naive Bayesr, K-Nearest Neighbors Classifier and XGBClassifier with GridSearchCV. I used different hyperparameters to optimize each model.
 
-### Evaluation of Models:
-I evaluated the models using various metrics such as accuracy (accuracy), RMSE (Root Mean Squared Error) and confusion matrix (confusion matrix).
-I tested the models on different subsets of data (training, validation, testing) allows to evaluate their overall performance.
+### Model evaluation:
+I evaluated the models using various metrics such as accuracy (accuracy),  and confusion matrix (confusion matrix). I tested the models on different subsets of data (training, validation, testing) to evaluate their overall performance.
 
-### Model Selection:
+### Model selection:
 Based on the test results, I decided to use the RandomForestClassifier model with hyperparameters n_estimators=5 and max_depth=5.
 
 ### Model:
-The final RandomForestClassifier model was saved to the model_mqp.pkl file, making it easy to reuse the model for forecasting on new data.
+The final XGBClassifier model was saved in the model_mqp.model, which makes it easy to reuse the model for forecasting on new data.
 
-### Model Performance:
-The final model achieved high accuracy on the test set, suggesting that the model is effective in predicting milk grade classes based on available characteristics.
+### Model performance:
+The final model achieved high accuracy on the validation set, suggesting that the model is effective in predicting milk class classes based on available characteristics. 
+I will continue to develop this project using neural networks. 
