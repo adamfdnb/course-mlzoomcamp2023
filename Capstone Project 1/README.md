@@ -116,7 +116,11 @@ Having the model prepared, you can easily import it in the future to make predic
 	+ ``` python test.py ```
  	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
 
-![alt text](images/test_py.png)
+![alt text](images/testapp_local.png)
+
+	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
+![alt text](images/test_webapp_c.png)
+
     
 
 ### Deploying Model Locally with Docker
