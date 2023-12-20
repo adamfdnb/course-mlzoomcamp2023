@@ -90,7 +90,6 @@ I tested seve models and tuned hyperparameters to optimize their performance. A 
   + Finally, preparing the data, training the XGBClassifier model and saving it to the ``` model_wpp.model ``` file was prepared in the ``` train.py ``` file. 
 Having the model prepared, you can easily import it in the future to make predictions on new data.
 
-![alt text](images/train_py.png)
 
 ## 5. Development system
 ### To deploy Model with Flask 
