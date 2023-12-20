@@ -159,18 +159,18 @@ pwd
 
 To deploy the application in the cloud, I used Render, which is a unified cloud for creating and running all applications and websites
 
-![alt text](images/webservice.png)
+![alt text](images/webapp_c.png)
 
-![alt text](images/webservice_2.png)
+![alt text](images/webapp1_c.png)
 
-![alt text](images/webservice_3.png)
+![alt text](images/webservice_c.png)
 
 
 5. Run test file test milk quality prediction app in cloud
 	+ ``` python test_webapp.py ``` / if you are using network services / remember to specify your own address
  	+ in order to improve the transfer of data for prediction, it is possible to transfer data in various formats: list, dict, DataFrame or numpy array
 
-![alt text](images/test_webapp.png)
+![alt text](images/test_webapp_c.png)
 
 
 ## 6. Summary with conclusions
