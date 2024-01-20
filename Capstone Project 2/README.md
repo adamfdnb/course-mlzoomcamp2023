@@ -2,7 +2,7 @@
 ## Snakes classification project
 
 <p align="center">
-  <img src="https://torrentlab.com/wp-content/uploads/2017/03/istock-923038904-768x511.jpg">
+  <img src="https://github.com/adamfdnb/course-mlzoomcamp2023/blob/main/Capstone%20Project%202/images/collage.jpg">
 </p>
 
 
