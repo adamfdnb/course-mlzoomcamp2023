@@ -24,9 +24,11 @@
 
 ### 1. Problem & Goal Description
 
-Ensuring access to safe drinking water is not only a health issue, but also a fundamental right for everyone. It is a key component of effective health policy, with important developmental implications at various levels - from national to regional to local levels.
-Analyses indicate that investments in water and sanitation infrastructure bring net economic benefits, as the reduction in negative health effects and health care costs exceeds the cost of implementing appropriate solutions. As a result, access to safe water becomes an important factor not only for individual well-being, but also for sustainable social development
-The goal of this project is to build Tto develop and evaluate machine learning models capable of predicting the potability of drinking water based on its physical characteristics. This project aims to contribute to improved water quality assessment and identification of potential water quality issues. I spent many hours exploring data and tuning models
+The goal of the "Snakes classification" project is to develop an algorithm for classifying snakes using images.
+
+Representing more than 3,500 species, snakes are a diverse group of animals present on all continents except Antarctica. Their sizes range from a few centimeters to several meters, and their diet includes a variety of prey such as other reptiles, mammals, birds, amphibians and fish.
+
+The project involves the development of a new algorithm for classifying snakes based on photos, which is expected to facilitate the process of recognizing these snakes. The algorithm will be capable of using a variety of features observed in the photos. The dataset, which includes 135 classes of snakes, will be used to identify and classify snake species based on their name and determine whether they are venomous.
 
 ## 2. About the Dataset
 
