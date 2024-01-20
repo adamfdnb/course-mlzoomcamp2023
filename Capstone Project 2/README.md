@@ -7,7 +7,7 @@
 
 *collage from a dataset*
 
-#### This repository contains a Capstone project 1 conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project lasted 2 weeks. The idea behind this project is to implement everything we learned in the last 10 weeks of classes.
+#### This repository contains a Capstone project 2 conducted as part of the [Machine Learning Zoomcamp](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) online course designed and taught by [Alexey Grigorev](https://github.com/alexeygrigorev) and his team from [DataTalks.Club](https://datatalks.club/). This project took 2 weeks to complete. The idea behind this project is to implement everything we have learned over the past several weeks and many hours exploring deep learning.
 
 ## Contents:
 1. problem & goal description
