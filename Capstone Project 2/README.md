@@ -2,7 +2,7 @@
 ## Snakes classification project
 
 <p align="center">
-  <img src="https://github.com/adamfdnb/course-mlzoomcamp2023/blob/main/Capstone%20Project%202/images/collage.jpg">
+  <img src="https://github.com/adamfdnb/course-mlzoomcamp2023/blob/main/Capstone%20Project%202/images/collage_v1.jpg">
 </p>
 
 *collage from a dataset*
