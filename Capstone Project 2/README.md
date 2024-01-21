@@ -32,7 +32,7 @@ The project involves the development of a new algorithm for classifying snakes b
 
 ## 2. About the Dataset
 
-You can get the dataset from [kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
+You can get the dataset from [kaggle](https://www.kaggle.com/datasets/goelyash/165-different-snakes-species)
 I have prepared a code in notebook that imports a set of data from within notenook. You will need an individual API Token downloaded from Kaggle. [Details](https://github.com/Kaggle/kaggle-api)
 
 The Water Potability dataset contains information about water quality, including its suitability for human consumption. It contains 3266 observations, each of which represents a water sample. Each observation contains 9 features:
