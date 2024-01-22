@@ -1,4 +1,4 @@
-# Venomous Labyrinth: Classifying and Recognizing Snakes
+# Venomous Labyrinth: Classifying Venomous Snakes
 ## Snakes classification project
 
 <p align="center">
