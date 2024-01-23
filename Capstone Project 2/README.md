@@ -1,5 +1,5 @@
 # Venomous Labyrinth: Classifying Venomous Snakes
-## Snakes classification project
+## Venomous Snake Classification project
 
 <p align="center">
   <img src="https://github.com/adamfdnb/course-mlzoomcamp2023/blob/main/Capstone%20Project%202/images/collage_v2.jpg">
@@ -24,18 +24,24 @@
 
 ### 1. Problem & Goal Description
 
-The goal of the "Snakes classification" project is to develop an algorithm for classifying snakes using images.
+The "Venomous Snake Classification" project aims to develop an algorithm to accurately categorize snakes through image analysis. With a dataset focused mainly on snake species found in India, the goal is to develop an effective system capable of distinguishing between different snake species and determining their venomousness.
 
-Representing more than 3,500 species, snakes are a diverse group of animals present on all continents except Antarctica. Their sizes range from a few centimeters to several meters, and their diet includes a variety of prey such as other reptiles, mammals, birds, amphibians and fish.
+Snakes, comprising more than 3,500 species, exhibit a variety of characteristics and are distributed throughout the world, except Antarctica. Reaching sizes ranging from a few centimeters to several meters, they prey on a wide variety of animals, including other reptiles, mammals, birds, amphibians and fish.
 
-The project involves the development of a new algorithm for classifying snakes based on photos, which is expected to facilitate the process of recognizing these snakes. The algorithm will be capable of using a variety of features observed in the photos. The dataset, which includes 135 classes of snakes, will be used to identify and classify snake species based on their name and determine whether they are venomous.
+Using advanced image recognition techniques, the project aims to streamline the snake identification process, providing valuable insight into the diverse population of snakes found in India. I would like the resulting algorithm to be able to contribute to snakebite prevention and treatment strategies by quickly identifying venomous snake species.
 
 ## 2. About the Dataset
 
-You can get the dataset from [kaggle](https://www.kaggle.com/datasets/goelyash/165-different-snakes-species)
+You can get the dataset from [kaggle](https://https://www.kaggle.com/datasets/adityasharma01/snake-dataset-india)
 I have prepared a code in notebook that imports a set of data from within notenook. You will need an individual API Token downloaded from Kaggle. [Details](https://github.com/Kaggle/kaggle-api)
 
-The Water Potability dataset contains information about water quality, including its suitability for human consumption. It contains 3266 observations, each of which represents a water sample. Each observation contains 9 features:
+The Snake dataset India contains  
+Train dataset
+```Found 1775 images belonging to 2 classes.```
+Test dataes
+```Found 269 images belonging to 2 classes.```
+
+about water quality, including its suitability for human consumption. It contains 3266 observations, each of which represents a water sample. Each observation contains 9 features:
 
 1. pH
 2. Total Hardness
