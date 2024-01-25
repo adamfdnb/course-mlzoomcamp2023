@@ -44,6 +44,9 @@ Test dataest<br>
 
 Clssses<br>
 ```{'Non Venomous': 0, 'Venomous': 1}```<br>
+
+Images format <br>
+```<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=400x400 at 0x7F863819B3A0>```
  
  ### Technologies
 - Python
