@@ -51,6 +51,7 @@ Images format <br>
  ### Technologies
 - Python
 - Numpy, Pandas, MatplotLib, Seaborn
+- PIL, os
 - Tensorflow / Tensorflow Lite  
 - Keras  
 - Models: Xception, MobileNetV2
@@ -71,33 +72,19 @@ I performed the following EDA for this dataset:
 + Create a data frame to read information about a set of files
 + Creating paths to the files
 + Analyzing the distribution of files in the data set by class
-
-
-
-+ Data loading: Loading data into the program for further analysis.
-  + In order to fill in the missing data, I have grouped the data with ph and the corresponding ranges according to the accepted standards 
-+ Analysis of missing values: Analysis of missing values in the data
-  + After completing the data, checked the covariance and correlation,
-  + Used box plots to determine outliers
-  + In the end, I created two datasets on which to conduct research. The second data set was cleaned of outliers
-+ Variable distribution analysis: Analyzing the distribution of variables in the data, such as mean, median, standard deviation, etc.
-+ Correlation and covariance analysis to identify relationships between data features
++ Loading a sample photo from the training set
 
 ## 3.2. Training the model
 
 I tested seve models and tuned hyperparameters to optimize their performance. A short summary: 
 
-### Logistic Regression | Random Forest Classifier| Gaussian Naive Bayes
+### Xception model
 
 + The Random Forest model tends to overfit the training data, as evidenced by its perfect accuracy on the training datasets but lower accuracy on the testing datasets. Logistic Regression and Naive Bayes exhibit more stable performance but struggle to predict the positive class, especially on the original data. The models trained on the cleaned dataset do not consistently outperform their counterparts trained on the original data. Naive Bayes, the accuracy on the training dataset is 63.16%, indicating moderate performance. The performance on the testing dataset is consistent with the training dataset, with an accuracy of 62.96%.
 
-### Support Vector Machine (SVM) 
+### MobileNetV2
 
 + It seems like the SVM model with different values of the regularization parameter C (0.001, 0.01, 0.1, 1, 10, 100) is not performing well on both the training and testing sets. The accuracy is around 60-63%, and the confusion matrix and classification report show that the model is not effectively distinguishing between the two classes (0 and 1). The precision, recall, and F1-score for class 1 are consistently low, indicating that the model struggles to correctly identify instances of class 1.
-
-### KNeighbors Classifier
-
-+ Overfitting: The models, especially with fewer neighbors, seem to overfit the training data, resulting in a significant drop in performance on the testing set. Class Imbalance: The models struggle to perform well on the positive class, possibly due to class imbalance.
 
 ### XGBClassifier with GridSearchCV
 
