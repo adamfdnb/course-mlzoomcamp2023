@@ -50,10 +50,10 @@ Images format <br>
  
  ### Technologies
 - Python
+- Numpy, Pandas, MatplotLib, Seaborn
 - Tensorflow / Tensorflow Lite  
 - Keras  
-- Models: Xception, EfficientNetB2
-- Numpy, Pandas, MatplotLib
+- Models: Xception, MobileNetV2
 - Flask and FastAPI  
 - Streamlit  
 - Docker / docker-compose  
@@ -68,7 +68,7 @@ Images format <br>
 
 I performed the following EDA for this dataset:
 + Loading the data: Loading the data into the application for further analysis.
-+ Creating a dataframe to read the files
++ Create a data frame to read information about a set of files
 + Creating paths to the files
 + Analyzing the distribution of files in the data set by class
 
