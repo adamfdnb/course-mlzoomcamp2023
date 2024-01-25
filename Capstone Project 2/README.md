@@ -41,21 +41,7 @@ Train dataset
 Test dataes
 ```Found 269 images belonging to 2 classes.```
 
-about water quality, including its suitability for human consumption. It contains 3266 observations, each of which represents a water sample. Each observation contains 9 features:
-
-1. pH
-2. Total Hardness
-3. Chlorides
-4. Electrical Conductivity
-5. Nitrates
-6. Phosphates
-7. Total Organic Carbon
-8. Ammoniacal Nitrogen
-9. Sulfates
-
-The dependent variable is the quality of the water, which may be undrinkable or drinkable 
-
-10. Potability: Indicates if water is safe for human consumption where 1 means Potable and 0 means Not potable.
+Clssses
 
 
 ## 3. Problem solving approach
