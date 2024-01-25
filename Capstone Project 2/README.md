@@ -22,6 +22,7 @@
    4.3 Cloud Deploying <br>
 5. Summary with conclusions
 
+
 ### 1. Problem & Goal Description
 
 The "Venomous Snake Classification" project aims to develop an algorithm to accurately categorize snakes through image analysis. With a dataset focused mainly on snake species found in India, the goal is to develop an effective system capable of distinguishing between different snake species and determining their venomousness.
@@ -30,24 +31,45 @@ Snakes, comprising more than 3,500 species, exhibit a variety of characteristics
 
 Using advanced image recognition techniques, the project aims to streamline the snake identification process, providing valuable insight into the diverse population of snakes found in India. I would like the resulting algorithm to be able to contribute to snakebite prevention and treatment strategies by quickly identifying venomous snake species.
 
-## 2. About the Dataset
+## 2. About the Dataset and technologies
 
 You can get the dataset from [kaggle](https://https://www.kaggle.com/datasets/adityasharma01/snake-dataset-india)
 I have prepared a code in notebook that imports a set of data from within notenook. You will need an individual API Token downloaded from Kaggle. [Details](https://github.com/Kaggle/kaggle-api)
 
 The Snake dataset India contains  
-Train dataset
-```Found 1775 images belonging to 2 classes.```
-Test dataes
-```Found 269 images belonging to 2 classes.```
+Train dataset<br>
+```Found 1775 images belonging to 2 classes.```<br>
+Test dataest<br>
+```Found 269 images belonging to 2 classes.```<br>
 
-Clssses
+Clssses<br>
+```{'Non Venomous': 0, 'Venomous': 1}```<br>
+ 
+ ### Technologies
+- Python
+- Tensorflow / Tensorflow Lite  
+- Keras  
+- Models: Xception, EfficientNetB2
+- Numpy, Pandas, MatplotLib
+- Flask and FastAPI  
+- Streamlit  
+- Docker / docker-compose  
+- Kubernetes / Kind  
+- AWS EKS  
+- Locust  
+- Pytest  
 
 
 ## 3. Problem solving approach
 ### 3.1 EDA to understand the dataset
 
 I performed the following EDA for this dataset:
++ Loading the data: Loading the data into the application for further analysis.
++ Creating a dataframe to read the files
++ Creating paths to the files
++ Analyzing the distribution of files in the data set by class
+
+
 
 + Data loading: Loading data into the program for further analysis.
   + In order to fill in the missing data, I have grouped the data with ph and the corresponding ranges according to the accepted standards 
